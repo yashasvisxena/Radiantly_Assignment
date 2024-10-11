@@ -43,6 +43,7 @@ const Hero = () => {
           <Label className='md:w-1/4 w-2/4'>Limit :</Label>
           <Input
             type="number"
+
             placeholder="Limit"
             onChange={(e) => handleLimitChange(e.target.value)}
           />
@@ -54,7 +55,7 @@ const Hero = () => {
             <DetailCard key={pokemon.id} pokemon={pokemon} />
           ))
         ) : (
-          <p>No Pokémon found</p>
+          <p className="p-4">No Pokémon found</p>
         )}
       </div>
     </div>
